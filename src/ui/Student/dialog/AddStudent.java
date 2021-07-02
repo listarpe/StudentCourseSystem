@@ -32,7 +32,7 @@ public class AddStudent extends JFrame{
 
         setTitle("录入信息");
         setLayout(new BorderLayout());
-        setBounds(400, 200, 400, 200);
+        setBounds(400, 200, 300, 200);
 
         addPanel1.setLayout(new FlowLayout(FlowLayout.LEFT));
         addPanel1.add(addLabel1);

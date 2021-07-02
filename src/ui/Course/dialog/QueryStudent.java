@@ -53,7 +53,7 @@ public class QueryStudent extends JFrame {
             public void mouseClicked(MouseEvent e) {
                 int index=table.getSelectedRow();
                 if(index>-1) {
-                    EnterGrade eg = new EnterGrade(scs.get(index));
+                    EnterGrade eg = new EnterGrade(scs.get(index), table);
                     table.updateUI();
                 }
             }

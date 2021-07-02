@@ -14,7 +14,7 @@ public class EnterGrade extends JFrame {
     JLabel label = new JLabel("分数：");
     JTextField textField = new JTextField("", 10);
     JButton button = new JButton("确定");
-    public EnterGrade(SC sc) {
+    public EnterGrade(SC sc, JTable table) {
         setTitle("登分");
         setLayout(new BorderLayout());
         setBounds(400, 200, 400, 200);
@@ -39,6 +39,7 @@ public class EnterGrade extends JFrame {
                 String Cno = sc.getCourse().getCno();
                 scManage.addGrade(Sno, Cno, grade);
                 sc.setGrade(grade);
+                table.updateUI();
                 dispose();
             }
         });
