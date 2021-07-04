@@ -1,11 +1,12 @@
 package main;
 
-import ui.MainGUI;
+import ui.Main.MainGUI;
+import ui.login.Load;
 
 import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-        JFrame mainGUI = new MainGUI();
+        JFrame load = new Load();
     }
 }

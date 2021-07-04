@@ -108,8 +108,8 @@ public class SCDaoImpl implements SCDao {
         try {
             conn= JDBCUtil.getConnection();//获取数据库连接
             st=conn.createStatement();
-            String sql="insert into SC(Sno, Cno) values('"
-                    +Sno+"','"+Cno+"')";
+            String sql="insert into SC values('"
+                    +Sno+"','"+Cno+"', -1)";
             st.executeUpdate(sql);//执行插入语句
         }catch(Exception e) {
             e.printStackTrace();

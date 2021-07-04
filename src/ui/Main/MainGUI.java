@@ -1,4 +1,4 @@
-package ui;
+package ui.Main;
 
 import ui.Course.CouMain;
 import ui.Student.StuMain;
